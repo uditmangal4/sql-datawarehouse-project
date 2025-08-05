@@ -6,13 +6,13 @@ Script Purpose:
 This load data in to the 'bronze' schema from external csv files.
 #Truncates the bronze table before loading data.
 #Use the BULK INSERT command to load data from csv Files to bronze tables.
-
 parameter:
 This stored procedure does not accept any value or return .
-
 usage Example:
 EXEC bronze.load_bronze
 */
+
+
 CREATE OR ALTER PROCEDURE bronze.load_bronze AS
 BEGIN
   DECLARE @start_time DATETIME, @end_time DATETIME,@batch_start_time DATETIME, @batch_end_time DATETIME;
